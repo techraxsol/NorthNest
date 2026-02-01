@@ -12,22 +12,33 @@ export default function HomePage() {
       <Header />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <div className="relative bg-[#003580] text-white pb-24">
-          <div className="container-custom pt-16 pb-12">
-            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
-              Find your next stay
-            </h1>
-            <p className="text-xl text-blue-100 font-medium">
-              Search low prices on hotels, homes and much more...
-            </p>
-          </div>
-          
-          {/* Overlay Search Widget */}
-          <div className="container-custom relative z-10 -mb-8">
-            <SearchWidget />
-          </div>
-        </div>
+      {/* Hero Section */}
+<div
+  className="relative w-full h-[50vh] md:h-[60vh] flex items-center justify-center text-center text-white bg-cover bg-bottom bg-fixed"
+  style={{
+    backgroundImage: `url('https://images.unsplash.com/photo-1628179487664-a1f95c267a26?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/10"></div>
+
+  <div className="relative z-10 px-4 md:px-0 max-w-3xl mx-auto mt-16 md:mt-24">
+  <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">
+    Discover Northern Pakistan
+  </h1>
+  <p className="text-lg md:text-xl mb-6 text-white/90 drop-shadow-sm">
+    Find unique stays in the Himalayas, Karakoram, Hunza, Skardu, and beyond.
+  </p>
+  <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:-translate-y-1">
+    Start Exploring
+  </Button>
+</div>
+
+  <div className="absolute bottom-[-2.5rem] w-full px-4 md:px-0 z-20">
+    <div className="max-w-6xl mx-auto shadow-xl rounded-lg overflow-hidden">
+      <SearchWidget />
+    </div>
+  </div>
+</div>
 
         {/* Content Section */}
         <div className="container-custom pt-24 pb-16 space-y-16">
@@ -42,7 +53,7 @@ export default function HomePage() {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent p-6 flex flex-col justify-center">
-                <h3 className="text-white font-bold text-xl mb-2">Seize the moment</h3>
+                <h3 className="text-white font-bold text-xl mb-2">Explore Hunza</h3>
                 <p className="text-white/90 text-sm mb-4 max-w-[250px]">Save 15% or more when you book and stay before October 1, 2024</p>
                 <Button className="w-fit bg-[#003580] hover:bg-[#00224f] text-white">Find a Deal</Button>
               </div>
