@@ -8,18 +8,27 @@ import HomePage from "@/pages/Home";
 import SearchPage from "@/pages/SearchPage";
 import PropertyDetails from "@/pages/PropertyDetails";
 import BookingsPage from "@/pages/BookingsPage";
+import About from "@/pages/About";
+import Help from "@/pages/Help";
+import Contact from "@/pages/Contact";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/search" component={SearchPage} />
+
+      <Route path="/about" component={About} />
+      <Route path="/help" component={Help} />
+      <Route path="/contact" component={Contact} />
+
       <Route path="/property/:id" component={PropertyDetails} />
       <Route path="/bookings" component={BookingsPage} />
       <Route component={NotFound} />
     </Switch>
   );
 }
+
 
 function App() {
   return (

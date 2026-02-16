@@ -32,6 +32,22 @@ export function Header() {
             </div>
             <span className="text-2xl font-display font-bold tracking-tight">NorthNest</span>
           </Link>
+           {/* Nav (Desktop) */}
+  <div className="flex items-center gap-6">
+
+  {/* Nav (Desktop) */}
+  <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-white/90">
+    <Link href="/about">
+      <span className="cursor-pointer hover:text-white transition-colors">About</span>
+    </Link>
+    <Link href="/help">
+      <span className="cursor-pointer hover:text-white transition-colors">Help</span>
+    </Link>
+    <Link href="/contact">
+      <span className="cursor-pointer hover:text-white transition-colors">Contact</span>
+    </Link>
+  </nav>
+  </div>
 
           {/* Actions */}
           <div className="flex items-center gap-4">
