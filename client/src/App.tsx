@@ -11,6 +11,7 @@ import BookingsPage from "@/pages/BookingsPage";
 import About from "@/pages/About";
 import Help from "@/pages/Help";
 import Contact from "@/pages/Contact";
+ import AuthPage from "@/pages/Auth";
 
 function Router() {
   return (
@@ -24,6 +25,9 @@ function Router() {
 
       <Route path="/property/:id" component={PropertyDetails} />
       <Route path="/bookings" component={BookingsPage} />
+     
+
+<Route path="/auth" component={AuthPage} />
       <Route component={NotFound} />
     </Switch>
   );
