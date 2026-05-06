@@ -16,6 +16,7 @@ function Router() {
       <Route path="/search" component={SearchPage} />
       <Route path="/property/:id" component={PropertyDetails} />
       <Route path="/bookings" component={BookingsPage} />
+      <Route path="Find Booking" component={findBookingPage} />
       <Route component={NotFound} />
     </Switch>
   );
